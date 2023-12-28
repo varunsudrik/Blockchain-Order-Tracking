@@ -1,0 +1,320 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_orderDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_currentDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_status",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_customerName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_customerAddress",
+				"type": "string"
+			}
+		],
+		"name": "CreateOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "DeleteOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "customerName",
+				"type": "string"
+			}
+		],
+		"name": "OrderCreate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "OrderDelete",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "customerName",
+				"type": "string"
+			}
+		],
+		"name": "OrderUpdate",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_orderId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_orderDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_currentDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_status",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_customerName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_customerAddress",
+				"type": "string"
+			}
+		],
+		"name": "UpdateOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "AllOrders",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "orderDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "currentDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "customerName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "customerAddress",
+						"type": "string"
+					}
+				],
+				"internalType": "struct OrderTracking.Order[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "orderId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "orders",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "orderDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "currentDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "customerName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "customerAddress",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "ViewOrder",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "orderDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "currentDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "customerName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "customerAddress",
+						"type": "string"
+					}
+				],
+				"internalType": "struct OrderTracking.Order",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #16131b;
+  height: 100vh;
+  width: 100%;
+}
+/* ========= WALLET STARTS ==========  */
+
+.wallet_header {
+  background-color: #333;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+.wallet_header p {
+  color: #eb5429;
+  font-weight: 800;
+  font-size: 30px;
+}
+.wallet_header span {
+  color: #dad5d4;
+  font-weight: 200;
+  font-size: 24px;
+}
+.connect_wallet_section {
+  color: white;
+  background-color: #16131b;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.connect_wallet_section p {
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+/* =========WALLTET ENDS ==========  */
+
+/* =========NAVBAR STARTS ==========  */
+
+header {
+  background-color: #333;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+header .logo {
+  color: #eb5429;
+  font-weight: 800;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav_link:hover {
+  color: #eb5429;
+}
+
+.nav_link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  header {
+    padding: 12px;
+  }
+  header .logo {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+}
+
+
+.view_all_orders {
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: #16131b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 160px;
+  gap: 24px;
+  padding-bottom: 100px;
+}
+.view_all_orders_card {
+  background-color: #eb5429;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.view_all_orders_card:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .view_all_orders_card {
+    width: 300px;
+    font-size: 12px;
+  }
+}
+.create_order {
+  display: grid;
+  background-color: #16131b;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+.create_order form {
+  margin-top: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.create_order input {
+  margin-top: 12px;
+}
+.view_order {
+  background-color: #16131b;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.view_order_id {
+  color: white;
+  background-color: red;
+}
+
+.view_order .view_order_by_id {
+  margin-top: 200px;
+}
+.empty_div {
+  margin-top: 200px;
+}
+.view_order form {
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .view_order_by_id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 18px !important;
+  }
+}
+.update_order {
+  background-color: #16131b;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.update_order form {
+  margin-top: 200px;
+}
+.update_order input {
+  margin-top: 12px;
+}
+
+.delete_order {
+  background-color: #16131b;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.delete_order form {
+  margin-top: 200px;
+}
+.delete_order input {
+  margin-top: 12px;
+}
